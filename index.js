@@ -22,8 +22,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/file", (req, res) => {
-  res.set("Content-Disposition", 'attachment; filename="test.json"');
-  res.send();
+  res.send("file");
 });
 
 app.get("/ping", (req, res) => {
